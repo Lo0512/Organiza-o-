@@ -15,8 +15,14 @@
     <main>
         <section>
             <input type="text" placeholder="O que deseja fazer hoje ?" id="campo-pesquisa">
-            <p>Aprendizagem e Desenvolvimento Pessoal|Planejamento e Organização|Rotinas e Hábitos|Produtividade e Gestão de Tempo |Comunicação, Liderança e Relações </p>
-            <button onclick="pesquisar()">Pesquisar</button>
+            <div class="atalhos">
+  <button onclick="preencherPesquisa('Aprendizagem')">Aprendizagem</button>
+  <button onclick="preencherPesquisa('Planejamento')">Planejamento</button>
+  <button onclick="preencherPesquisa('Rotinas')">Rotinas</button>
+  <button onclick="preencherPesquisa('Produtividade')">Produtividade</button>
+  <button onclick="preencherPesquisa('Comunicação')">Comunicação</button>
+</div>
+         <button onclick="pesquisar()">Pesquisar</button>
         </section>
         <section class="resultados-pesquisa" id="resultados-pesquisa">
         </section>
@@ -32,6 +38,7 @@
 
 
 </html>
+
 
 
 
