@@ -36,7 +36,10 @@ function pesquisar() {
             <p class="descricao-meta">${dado.introducao}</p>
             <p class="descricao-meta">${dado.desenvolvimento}</p>
             <p class="descricao-meta">${dado.resumo}</p>
-            <p class="descricao-meta"><strong>Prompts:</strong> ${dado.prompts.join(", ")}</p>
+            <p <p class="descricao-meta"><strong>Prompts:</strong></p>
+<div class="tags-prompts">
+  ${dado.prompts.map(item => `<span class="tag">${item}</span>`).join("")}
+</div></p>
 </div>`;
         }
     });
@@ -45,6 +48,7 @@ function pesquisar() {
     section.innerHTML = resultados || "<p> Nada foi encontrado tente digitar os titulos que aparecem</p>";
 
 }
+
 
 
 
