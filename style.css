@@ -138,6 +138,29 @@ footer {
     bottom: 0;
     font-size: 1rem;
 }
+.atalhos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.atalhos button {
+    background-color: #EADAC1;
+    color: #4B3F33;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.atalhos button:hover {
+    background-color: #C4A484;
+    color: #fff;
+}
 
 /* Responsividade para tablets */
 @media (max-width: 768px) {
@@ -190,4 +213,5 @@ footer {
         font-size: 0.9rem;
     }
 }
+
 
