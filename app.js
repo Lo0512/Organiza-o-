@@ -36,8 +36,8 @@ function pesquisar() {
             <p class="descricao-meta">${dado.introducao}</p>
             <p class="descricao-meta">${dado.desenvolvimento}</p>
             <p class="descricao-meta">${dado.resumo}</p>
-            <p class="descricao-meta">${dado.prompts}</p> </div>
-        `;
+            <p class="descricao-meta"><strong>Prompts:</strong> ${dado.prompts.join(", ")}</p>
+</div>`;
         }
     });
 
@@ -45,6 +45,7 @@ function pesquisar() {
     section.innerHTML = resultados || "<p> Nada foi encontrado tente digitar os titulos que aparecem</p>";
 
 }
+
 
 
 
