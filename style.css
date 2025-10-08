@@ -38,7 +38,7 @@ section input {
     padding: 1rem;
     border-radius: 1.5rem;
     margin-bottom: 1rem;
-    color: #6E5E4F; /* Tom médio de marrom */
+    color: #4B3F33; /* Tom mais escuro para contraste */
     font-size: 1rem;
     background-color: #EADAC1; /* Bege médio */
     box-sizing: border-box;
@@ -54,6 +54,7 @@ section button {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 0.5rem;
 }
 
 /* Adiciona efeito hover ao botão de pesquisa */
@@ -80,6 +81,11 @@ section button:hover {
     padding: 1rem;
     margin-bottom: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.item-resultado:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Estiliza os títulos dentro dos itens de resultado */
@@ -94,14 +100,13 @@ section button:hover {
     color: #6E5E4F;
 }
 
-/* Estiliza os links quando são passados o mouse sobre */
 .item-resultado a:hover {
     text-decoration: underline;
 }
 
 /* Estiliza a descrição meta dentro dos itens de resultado */
 .descricao-meta {
-    color: #6E5E4F;
+    color: #4B3F33;
     margin: 0.5rem 0;
 }
 
@@ -168,5 +173,3 @@ footer {
         font-size: 0.9rem;
     }
 }
-
-
