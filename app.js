@@ -23,7 +23,7 @@ function pesquisar() {
     // Itera sobre cada dado e verifica se contém o termo pesquisado
     dado.forEach(dado => {
         const titulo = String(dado.titulo).toLowerCase();
-        const profissao = String(dado.profissao).toLowerCase();
+        const pronts = String(dado.pronts).toLowerCase();
         const introducao = String(dado.introducao).toLowerCase();
         const desenvolvimento = String(dado.desenvolvimento).toLowerCase();
         const resumo = String(dado.resumo).toLowerCase();
@@ -31,7 +31,7 @@ function pesquisar() {
         if (titulo.includes(campoPesquisa) ) {
             resultados += ` <div class="item-resultado">
             <h2>${dado.titulo}</h2>
-            <p class="descricao-meta">${dado.profissao}</p>
+            <p class="descricao-meta">${dado.pronts}</p>
             <p class="descricao-meta">${dado.introducao}</p>
             <p class="descricao-meta">${dado.desenvolvimento}</p>
             <p class="descricao-meta">${dado.resumo}</p>
@@ -42,4 +42,5 @@ function pesquisar() {
 
     // Atribui os resultados gerados à seção HTML
     section.innerHTML = resultados || "<p> Nada foi encontrado tente digitar o nome de uma personagem</p>";
+
 }
