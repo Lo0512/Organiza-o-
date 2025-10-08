@@ -110,6 +110,23 @@ section button:hover {
     margin: 0.5rem 0;
 }
 
+/* Estiliza os prompts como tags */
+.tags-prompts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.tag {
+    background-color: #EADAC1;
+    color: #4B3F33;
+    padding: 0.4rem 0.8rem;
+    border-radius: 1rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
 /* Estiliza o rodapé da página */
 footer {
     background-color: #C4A484;
@@ -173,3 +190,4 @@ footer {
         font-size: 0.9rem;
     }
 }
+
