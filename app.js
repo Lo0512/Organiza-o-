@@ -1,3 +1,7 @@
+function preencherPesquisa(valor) {
+    document.getElementById('campo-pesquisa').value = valor;
+    pesquisar();
+}
 function pesquisar() {
     // Obtém a seção HTML onde os resultados serão exibidos
     const section = document.getElementById("resultados-pesquisa");
@@ -46,6 +50,7 @@ function pesquisar() {
     section.innerHTML = resultados || "<p> Nada foi encontrado tente digitar os titulos que aparecem</p>";
 
 }
+
 
 
 
