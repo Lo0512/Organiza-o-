@@ -7,7 +7,7 @@ function pesquisar() {
 
     // Verifica se o campo de pesquisa está vazio
     if (!campoPesquisa) {
-        section.innerHTML = "<p> Nada foi encontrado. Declare o nome da personagem no campo de pesquisa </p>";
+        section.innerHTML = "<p> Nada foi encontrado. Digite um titulo </p>";
         return;
     }
 
@@ -27,6 +27,7 @@ function pesquisar() {
         const introducao = String(dado.introducao).toLowerCase();
         const desenvolvimento = String(dado.desenvolvimento).toLowerCase();
         const resumo = String(dado.resumo).toLowerCase();
+        const prompts = String(dado.prompts)toLowerCase();
 
         if (titulo.includes(campoPesquisa) ) {
             resultados += ` <div class="item-resultado">
@@ -35,12 +36,13 @@ function pesquisar() {
             <p class="descricao-meta">${dado.introducao}</p>
             <p class="descricao-meta">${dado.desenvolvimento}</p>
             <p class="descricao-meta">${dado.resumo}</p>
-            <a href="${dado.link}">Saiba mais sobre essa personagem</a> </div>
+            <p class="descricao-meta">${dado.prompts}</p>
         `;
         }
     });
 
     // Atribui os resultados gerados à seção HTML
-    section.innerHTML = resultados || "<p> Nada foi encontrado tente digitar o nome de uma personagem</p>";
+    section.innerHTML = resultados || "<p> Nada foi encontrado tente digitar os titulos que aparecem</p>";
 
 }
+
