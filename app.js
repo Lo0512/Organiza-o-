@@ -15,7 +15,7 @@ function pesquisar() {
     let resultados = "";
 
     // Verifica se 'dado existe e é um array
-    if (!dado | !Array.isArray(dado)) {
+    if (!dado || !Array.isArray(dado)) {
         console.error('O array "dado" não está definido ou não é um array');
         return;
     }
@@ -27,7 +27,7 @@ function pesquisar() {
         const introducao = String(dado.introducao).toLowerCase();
         const desenvolvimento = String(dado.desenvolvimento).toLowerCase();
         const resumo = String(dado.resumo).toLowerCase();
-        const prompts = String(dado.prompts)toLowerCase();
+        const prompts = dado.prompts.join(" ").toLowerCase();
 
         if (titulo.includes(campoPesquisa) ) {
             resultados += ` <div class="item-resultado">
@@ -45,6 +45,7 @@ function pesquisar() {
     section.innerHTML = resultados || "<p> Nada foi encontrado tente digitar os titulos que aparecem</p>";
 
 }
+
 
 
 
