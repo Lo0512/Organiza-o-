@@ -1,6 +1,6 @@
 const dados = [
   {
-    "titulo": "30. Produtividade em Ambientes Remotos",
+    "titulo": "Produtividade em Ambientes Remotos",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -14,7 +14,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "31. Produtividade em Reuniões",
+    "titulo": "Produtividade em Reuniões",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -28,7 +28,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "32. Produtividade Digital",
+    "titulo": "Produtividade Digital",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -42,7 +42,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "33. Uso de Ferramentas de Produtividade",
+    "titulo": "Uso de Ferramentas de Produtividade",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -56,7 +56,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "34. Controle de Procrastinação",
+    "titulo": "Controle de Procrastinação",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -70,7 +70,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "35. Mindfulness no Trabalho",
+    "titulo": "Mindfulness no Trabalho",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -84,7 +84,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "36. Inteligência Emocional",
+    "titulo": "Inteligência Emocional",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -98,7 +98,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "37. Autoconﬁança",
+    "titulo": "Autoconﬁança",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -112,7 +112,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "38. Comunicação Assertiva",
+    "titulo": "Comunicação Assertiva",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -126,7 +126,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "39. Persuasão",
+    "titulo": "Persuasão",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -140,7 +140,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "40. Gestão de Metas Pessoais",
+    "titulo": "Gestão de Metas Pessoais",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -154,7 +154,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "41. Finanças Pessoais",
+    "titulo": "Finanças Pessoais",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -168,7 +168,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "42. Deﬁnição de Prioridades Familiares",
+    "titulo": "Deﬁnição de Prioridades Familiares",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -182,7 +182,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "43. Organização Doméstica",
+    "titulo": "Organização Doméstica",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -196,7 +196,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "44. Rotinas Matinais",
+    "titulo": "Rotinas Matinais",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -210,7 +210,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "45. Rotinas Noturnas",
+    "titulo": "Rotinas Noturnas",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -224,7 +224,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "46. Estabelecimento de Hábitos",
+    "titulo": "Estabelecimento de Hábitos",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -238,7 +238,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "47. Mudança de Hábitos",
+    "titulo": "Mudança de Hábitos",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -252,7 +252,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "48. Introspecção e Autoanálise",
+    "titulo": "Introspecção e Autoanálise",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -266,7 +266,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "49. Aprender com Erros",
+    "titulo": "Aprender com Erros",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -280,7 +280,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "50. Saúde Física e Produtividade",
+    "titulo": "Saúde Física e Produtividade",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -294,7 +294,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "51. Organização de Eventos",
+    "titulo": "Organização de Eventos",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -308,7 +308,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "52. Estratégias de Estudo",
+    "titulo": "Estratégias de Estudo",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -322,7 +322,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "53. Soft Skills",
+    "titulo": "Soft Skills",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -336,7 +336,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "54. Hard Skills",
+    "titulo": "Hard Skills",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -350,7 +350,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "55. Produtividade para Estudantes Universitários",
+    "titulo": "Produtividade para Estudantes Universitários",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -364,7 +364,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "56. Carreira e Desenvolvimento Proﬁssional",
+    "titulo": "Carreira e Desenvolvimento Proﬁssional",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -378,7 +378,7 @@ const dados = [
     ]
   },
   {
-    "titulo": "57. Construção de Portfólio",
+    "titulo": "Construção de Portfólio",
     "pronts": "Explore ideias transformadoras para impulsionar seu desenvolvimento pessoal e profissional.",
     "introducao": "Esta categoria oferece ferramentas e reflexões para aprimorar sua rotina e alcançar seus objetivos.",
     "desenvolvimento": "Aprofunde-se em práticas que promovem crescimento, produtividade e bem-estar.",
@@ -1400,4 +1400,5 @@ const dados = [
     ]
   }
 ];
+
 
