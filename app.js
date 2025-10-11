@@ -1,42 +1,4 @@
-function mostrarPrompts(tituloCategoria) {
-  const categoria = dados.find(item => item.titulo === tituloCategoria);
-  const container = document.getElementById("resultados-pesquisa");
 
-  if (!categoria) {
-    container.innerHTML = "<p>Categoria não encontrada.</p>";
-    return;
-  }
-
-  let html = `
-    <div class="item-resultado">
-      <h2>${categoria.titulo}</h2>
-      <p class="descricao-meta"><em>${categoria.pronts}</em></p>
-      <p class="descricao-meta">${categoria.introducao}</p>
-      <p class="descricao-meta">${categoria.desenvolvimento}</p>
-      <p class="descricao-meta">${categoria.resumo}</p>
-      <p class="descricao-meta"><strong>Temas:</strong></p>
-      <div class="tags-prompts">
-        ${categoria.prompts.map(p => `<span class="tag" onclick="executarPrompt('${p}')">${p}</span>`).join("")}
-      </div>
-    </div>
-  `;
-
-  container.innerHTML = html;
-}
-
-function executarPrompt(promptSelecionado) {
-  const container = document.getElementById("resultados-pesquisa");
-  container.innerHTML = `
-    <div class="item-resultado">
-      <h2>🔍 Análise Inteligente</h2>
-      <p class="descricao-meta">Você selecionou: <strong>${promptSelecionado}</strong></p>
-      <p class="descricao-meta">A IA está gerando insights com base nos seus dados e princípios da neurociência...</p>
-    </div>
-  `;
-
-  // Aqui você pode integrar com Copilot ou outro agente IA
-  // Exemplo: enviar o prompt para análise e exibir o resultado
-}
 function buscarResumoNutricional() {
   fetch("https://script.google.com/macros/s/AKfycbxUZtwpROxxpe6L03m8tflxj56XuxeQO-PSSZm3xwrDAsC0fY34J4Pt0xu3xnN8S-dN/exec") // substitua pela sua URL
     .then(response => response.text())
@@ -51,23 +13,54 @@ function buscarResumoNutricional() {
     .catch(error => {
       console.error("Erro ao buscar resumo:", error);
     });
+function pesquisar() {
+    // Obtém a seção HTML onde os resultados serão exibidos
+    const section = document.getElementById("resultados-pesquisa");
+
+    // Obtém o valor do campo de pesquisa e converte para minúsculas
+    const campoPesquisa = document.getElementById('campo-pesquisa').value.toLowerCase();
+
+    // Verifica se o campo de pesquisa está vazio
+    if (!campoPesquisa) {
+        section.innerHTML = "<p> Nada foi encontrado. Declare um titulo existente </p>";
+        return;
+    }
+
+    // Inicializa uma string vazia para armazenar os resultados
+    let resultados = "";
+
+    // Verifica se 'dado existe e é um array
+    if (!dado | !Array.isArray(dado)) {
+        console.error('O array "dado" não está definido ou não é um array');
+        return;
+    }
+
+    // Itera sobre cada dado e verifica se contém o termo pesquisado
+    dado.forEach(dado => {
+        const titulo = String(dado.titulo).toLowerCase();
+        const pronts= String(dado.pronts).toLowerCase();
+        const introducao = String(dado.introducao).toLowerCase();
+        const desenvolvimento = String(dado.desenvolvimento).toLowerCase();
+        const resumo = String(dado.resumo).toLowerCase();
+        const prompts = String(dado.prompts).toLowerCase();
+
+        if (titulo.includes(campoPesquisa) ) {
+            resultados += ` <div class="item-resultado">
+            <h2>${dado.titulo}</h2>
+            <p class="descricao-meta">${dado.pronts}</p>
+            <p class="descricao-meta">${dado.introducao}</p>
+            <p class="descricao-meta">${dado.desenvolvimento}</p>
+            <p class="descricao-meta">${dado.resumo}</p>
+            <p class="descricao-meta">${dado.prompts}</p>
+            <a href="${dado.link}">Saiba mais sobre essa personagem</a> </div>
+        `;
+        }
+    });
+
+    // Atribui os resultados gerados à seção HTML
+    section.innerHTML = resultados || "<p> Nada foi encontrado tente digitar o nome de uma personagem</p>";
 }
 
-function buscarResumoGestaoTempo() {
-  fetch("https://script.google.com/macros/s/AKfycby8pOuzcrfRwoG8FwClNfSXzXnFhMdhNtfB-NruYlI-43bXPVnjIzlh9-GG1dFyIjwL/exec") // substitua pela sua URL
-    .then(response => response.text())
-    .then(resumo => {
-      document.getElementById("resultados-pesquisa").innerHTML = `
-        <div class="item-resultado">
-          <h2>📋 Gestão de Tempo</h2>
-          <p class="descricao-meta">${resumo.replace(/\n/g, "<br>")}</p>
-        </div>
-      `;
-    })
-    .catch(error => {
-      console.error("Erro ao buscar resumo:", error);
-    });
-}
 
 
 
