@@ -38,7 +38,7 @@ function executarPrompt(promptSelecionado) {
   // Exemplo: enviar o prompt para análise e exibir o resultado
 }
 function buscarResumoNutricional() {
-  fetch("AKfycbxUZtwpROxxpe6L03m8tflxj56XuxeQO-PSSZm3xwrDAsC0fY34J4Pt0xu3xnN8S-dN") // substitua pela sua URL
+  fetch("https://script.google.com/macros/s/AKfycbxUZtwpROxxpe6L03m8tflxj56XuxeQO-PSSZm3xwrDAsC0fY34J4Pt0xu3xnN8S-dN/exec") // substitua pela sua URL
     .then(response => response.text())
     .then(resumo => {
       document.getElementById("resultados-pesquisa").innerHTML = `
@@ -52,6 +52,7 @@ function buscarResumoNutricional() {
       console.error("Erro ao buscar resumo:", error);
     });
 }
+
 
 
 
