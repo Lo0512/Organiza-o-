@@ -68,6 +68,29 @@ function buscarResumoGestaoTempo() {
       console.error("Erro ao buscar resumo:", error);
     });
 }
+function buscarResumoTarefas() {
+  fetch("https://script.google.com/macros/s/SEU_ID_AQUI/exec") // substitua com a URL da sua API
+    .then(response => response.text())
+    .then(resumo => {
+      document.getElementById("resultados-pesquisa").innerHTML = `
+        <div class="item-resultado">
+          <h2>📋 Resumo de Tarefas</h2>
+          <p class="descricao-meta">${resumo.replace(/\n/g, "<br>")}</p>
+        </div>
+      `;
+    })
+    .catch(error => {
+      console.error("Erro ao buscar resumo:", error);
+      document.getElementById("resultados-pesquisa").innerHTML = `
+        <div class="item-resultado">
+          <h2>Erro</h2>
+          <p class="descricao-meta">Não foi possível carregar o resumo. Verifique a URL da API ou tente novamente mais tarde.</p>
+        </div>
+      `;
+    });
+}
+
+
 
 
 
