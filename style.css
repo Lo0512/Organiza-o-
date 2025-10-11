@@ -43,7 +43,7 @@ section button,
   border: none;
   border-radius: 1rem;
   background-color: #FFD6B3;
-  color: #0F0F0F;
+  color:#DCC6E0;
   font-weight: 600;
   font-size: 1rem;
   cursor: pointer;
@@ -71,4 +71,5 @@ section button:hover,
   border-radius: 1rem;
   padding: 1rem;
   margin-bottom:
+
 
