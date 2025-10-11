@@ -53,6 +53,22 @@ function buscarResumoNutricional() {
     });
 }
 
+function buscarResumoGestaoTempo() {
+  fetch("https://script.google.com/macros/s/SEU_ID_AQUI/exec") // substitua pela sua URL
+    .then(response => response.text())
+    .then(resumo => {
+      document.getElementById("resultados-pesquisa").innerHTML = `
+        <div class="item-resultado">
+          <h2>📋 Gestão de Tempo</h2>
+          <p class="descricao-meta">${resumo.replace(/\n/g, "<br>")}</p>
+        </div>
+      `;
+    })
+    .catch(error => {
+      console.error("Erro ao buscar resumo:", error);
+    });
+}
+
 
 
 
