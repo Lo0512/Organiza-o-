@@ -54,7 +54,7 @@ function buscarResumoNutricional() {
 }
 
 function buscarResumoGestaoTempo() {
-  fetch("https://script.google.com/macros/s/SEU_ID_AQUI/exec") // substitua pela sua URL
+  fetch("https://script.google.com/macros/s/AKfycby8pOuzcrfRwoG8FwClNfSXzXnFhMdhNtfB-NruYlI-43bXPVnjIzlh9-GG1dFyIjwL/exec") // substitua pela sua URL
     .then(response => response.text())
     .then(resumo => {
       document.getElementById("resultados-pesquisa").innerHTML = `
@@ -68,6 +68,7 @@ function buscarResumoGestaoTempo() {
       console.error("Erro ao buscar resumo:", error);
     });
 }
+
 
 
 
