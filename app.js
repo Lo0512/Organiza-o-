@@ -69,7 +69,7 @@ function buscarResumoGestaoTempo() {
     });
 }
 function buscarResumoTarefas() {
-  fetch("https://script.google.com/macros/s/SEU_ID_AQUI/exec") // substitua com a URL da sua API
+  fetch("https://script.google.com/macros/s/AKfycby8pOuzcrfRwoG8FwClNfSXzXnFhMdhNtfB-NruYlI-43bXPVnjIzlh9-GG1dFyIjwL/exec") // substitua com a URL da sua API
     .then(response => response.text())
     .then(resumo => {
       document.getElementById("resultados-pesquisa").innerHTML = `
@@ -89,6 +89,7 @@ function buscarResumoTarefas() {
       `;
     });
 }
+
 
 
 
