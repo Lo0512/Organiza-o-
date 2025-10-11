@@ -1,171 +1,73 @@
-/* Importa a fonte Inter do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-/* Estiliza o corpo da página */
 body {
-    font-family: "Inter", sans-serif;
-    background-color: #0F0F0F; /* Fundo escuro */
-    color: #FFFFFF;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  font-family: 'Inter', sans-serif;
+  background-color: #0F0F0F; /* fundo escuro */
+  color: #F5F0E6; /* bege claro */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Título principal */
-h1 {
-    font-size: 2.5rem;
-    color: #00FFB2; /* Verde neon */
-    margin-top: 4rem;
-    text-align: center;
-    letter-spacing: 0.1rem;
+header h1 {
+  font-size: 2.5rem;
+  color: #FFD6B3; /* tom pêssego/bege suave */
+  margin-top: 3rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
 }
 
-/* Seções */
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
-/* Campo de pesquisa */
 section input {
-    width: 28rem;
-    padding: 1rem;
-    border-radius: 0.8rem;
-    border: none;
-    background-color: #1F1F1F;
-    color: #FFFFFF;
-    font-size: 1rem;
-    margin-bottom: 1rem;
+  width: 28rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #1F1F1F;
+  color: #FFD6B3;
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
-/* Botões */
 section button,
 .atalhos button {
-    padding: 0.8rem 1.2rem;
-    border: none;
-    border-radius: 0.8rem;
-    background-color: #00FFB2;
-    color: #0F0F0F;
-    font-weight: 600;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #FFD6B3;
+  color: #0F0F0F;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 section button:hover,
 .atalhos button:hover {
-    background-color: #00cc8f;
+  background-color: #FFBFA0;
 }
 
-/* Resultados */
 .resultados-pesquisa {
-    width: 90%;
-    max-width: 60rem;
-    background-color: #1A1A1A;
-    border-radius: 0.8rem;
-    padding: 1rem;
-    margin-top: 1rem;
-    overflow-y: auto;
-    max-height: 50vh;
+  width: 90%;
+  max-width: 60rem;
+  background-color: #1A1A1A;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  overflow-y: auto;
+  max-height: 50vh;
 }
 
-/* Card de resultado */
 .item-resultado {
-    background-color: #2A2A2A;
-    border-radius: 0.8rem;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 2px 6px rgba(0, 255, 178, 0.1);
-    transition: box-shadow 0.3s ease;
-}
-
-.item-resultado:hover {
-    box-shadow: 0 4px 12px rgba(0, 255, 178, 0.2);
-}
-
-/* Título do card */
-.item-resultado h2 {
-    font-size: 1.5rem;
-    color: #00FFB2;
-}
-
-/* Descrição */
-.descricao-meta {
-    color: #CCCCCC;
-    margin: 0.5rem 0;
-}
-
-/* Tags */
-.tags-prompts {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 0.5rem;
-}
-
-.tag {
-    background-color: #00FFB2;
-    color: #0F0F0F;
-    padding: 0.4rem 0.8rem;
-    border-radius: 1rem;
-    font-size: 0.85rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.tag:hover {
-    background-color: #00cc8f;
-}
-
-/* Atalhos */
-.atalhos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
-/* Rodapé */
-footer {
-    background-color: #1F1F1F;
-    color: #AAAAAA;
-    text-align: center;
-    padding: 1rem;
-    width: 100%;
-    font-size: 0.9rem;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    section input {
-        width: 22rem;
-    }
-
-    .resultados-pesquisa {
-        max-width: 90%;
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    section input {
-        width: 90%;
-    }
-
-    section button {
-        font-size: 0.9rem;
-    }
-
-    .item-resultado h2 {
-        font-size: 1.2rem;
-    }
-}
+  background-color: #2A2A2A;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom:
