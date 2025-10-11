@@ -1,54 +1,43 @@
-function preencherPesquisa(valor) {
-    document.getElementById('campo-pesquisa').value = valor;
-    pesquisar();
+function mostrarPrompts(tituloCategoria) {
+  const categoria = dados.find(item => item.titulo === tituloCategoria);
+  const container = document.getElementById("resultados-pesquisa");
+
+  if (!categoria) {
+    container.innerHTML = "<p>Categoria não encontrada.</p>";
+    return;
+  }
+
+  let html = `
+    <div class="item-resultado">
+      <h2>${categoria.titulo}</h2>
+      <p class="descricao-meta"><em>${categoria.pronts}</em></p>
+      <p class="descricao-meta">${categoria.introducao}</p>
+      <p class="descricao-meta">${categoria.desenvolvimento}</p>
+      <p class="descricao-meta">${categoria.resumo}</p>
+      <p class="descricao-meta"><strong>Temas:</strong></p>
+      <div class="tags-prompts">
+        ${categoria.prompts.map(p => `<span class="tag" onclick="executarPrompt('${p}')">${p}</span>`).join("")}
+      </div>
+    </div>
+  `;
+
+  container.innerHTML = html;
 }
-function pesquisar() {
-    // Obtém a seção HTML onde os resultados serão exibidos
-    const section = document.getElementById("resultados-pesquisa");
 
-    // Obtém o valor do campo de pesquisa e converte para minúsculas
-    const campoPesquisa = document.getElementById('campo-pesquisa').value.toLowerCase();
+function executarPrompt(promptSelecionado) {
+  const container = document.getElementById("resultados-pesquisa");
+  container.innerHTML = `
+    <div class="item-resultado">
+      <h2>🔍 Análise Inteligente</h2>
+      <p class="descricao-meta">Você selecionou: <strong>${promptSelecionado}</strong></p>
+      <p class="descricao-meta">A IA está gerando insights com base nos seus dados e princípios da neurociência...</p>
+    </div>
+  `;
 
-    // Verifica se o campo de pesquisa está vazio
-    if (!campoPesquisa) {
-        section.innerHTML = "<p> Nada foi encontrado. Digite um titulo </p>";
-        return;
-    }
-
-    // Inicializa uma string vazia para armazenar os resultados
-    let resultados = "";
-
-    // Verifica se 'dado existe e é um array
-    if (!dado || !Array.isArray(dado)) {
-        console.error('O array "dado" não está definido ou não é um array');
-        return;
-    }
-
-    // Itera sobre cada dado e verifica se contém o termo pesquisado
-    dado.forEach(dado => {
-        const titulo = String(dado.titulo).toLowerCase();
-        const pronts = String(dado.pronts).toLowerCase();
-        const introducao = String(dado.introducao).toLowerCase();
-        const desenvolvimento = String(dado.desenvolvimento).toLowerCase();
-        const resumo = String(dado.resumo).toLowerCase();
-        const prompts = dado.prompts.join(" ").toLowerCase();
-
-        if (titulo.includes(campoPesquisa) ) {
-            resultados += ` <div class="item-resultado">
-            <h2>${dado.titulo}</h2>
-            <p class="descricao-meta">${dado.pronts}</p>
-            <p class="descricao-meta">${dado.introducao}</p>
-            <p class="descricao-meta">${dado.desenvolvimento}</p>
-            <p class="descricao-meta">${dado.resumo}</p>
-            <p class="descricao-meta"><strong>Titulos:</strong></p>
-            <div class="tags-prompts">${dado.prompts.map(item => `<span class="tag">${item}</span>`).join("")}</div></div>`;
-        }
-    });
-
-    // Atribui os resultados gerados à seção HTML
-    section.innerHTML = resultados || "<p> Nada foi encontrado tente digitar os titulos que aparecem</p>";
-
+  // Aqui você pode integrar com Copilot ou outro agente IA
+  // Exemplo: enviar o prompt para análise e exibir o resultado
 }
+
 
 
 
