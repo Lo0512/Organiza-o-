@@ -37,6 +37,22 @@ function executarPrompt(promptSelecionado) {
   // Aqui você pode integrar com Copilot ou outro agente IA
   // Exemplo: enviar o prompt para análise e exibir o resultado
 }
+function buscarResumoNutricional() {
+  fetch("AKfycbxUZtwpROxxpe6L03m8tflxj56XuxeQO-PSSZm3xwrDAsC0fY34J4Pt0xu3xnN8S-dN") // substitua pela sua URL
+    .then(response => response.text())
+    .then(resumo => {
+      document.getElementById("resultados-pesquisa").innerHTML = `
+        <div class="item-resultado">
+          <h2>🦋 Resumo Nutricional</h2>
+          <p class="descricao-meta">${resumo.replace(/\n/g, "<br>")}</p>
+        </div>
+      `;
+    })
+    .catch(error => {
+      console.error("Erro ao buscar resumo:", error);
+    });
+}
+
 
 
 
