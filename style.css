@@ -1,143 +1,128 @@
-/* Importa a fonte Montserrat do Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+/* Importa a fonte Inter do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 /* Estiliza o corpo da página */
 body {
-    font-family: "Montserrat", sans-serif;
-    background-color: #F5F0E6; /* Bege claro */
+    font-family: "Inter", sans-serif;
+    background-color: #0F0F0F; /* Fundo escuro */
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
 }
 
-/* Estiliza os títulos h1 */
+/* Título principal */
 h1 {
-    font-size: 2.3rem;
-    color: #A68C6D; /* Marrom suave */
-    margin-top: 400px;
+    font-size: 2.5rem;
+    color: #00FFB2; /* Verde neon */
+    margin-top: 4rem;
     text-align: center;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
 }
 
-/* Estiliza as seções da página */
+/* Seções */
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
-/* Estiliza os inputs dentro das seções */
+/* Campo de pesquisa */
 section input {
-    width: 30rem;
-    border: none;
+    width: 28rem;
     padding: 1rem;
-    border-radius: 1.5rem;
-    margin-bottom: 1rem;
-    color: #4B3F33; /* Tom mais escuro para contraste */
+    border-radius: 0.8rem;
+    border: none;
+    background-color: #1F1F1F;
+    color: #FFFFFF;
     font-size: 1rem;
-    background-color: #EADAC1; /* Bege médio */
-    box-sizing: border-box;
+    margin-bottom: 1rem;
 }
 
-/* Estiliza os botões dentro das seções */
-section button {
+/* Botões */
+section button,
+.atalhos button {
     padding: 0.8rem 1.2rem;
     border: none;
-    border-radius: 1.5rem;
-    background-color: #C4A484; /* Terracota suave */
-    color: #FFFFFF;
+    border-radius: 0.8rem;
+    background-color: #00FFB2;
+    color: #0F0F0F;
+    font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 0.5rem;
 }
 
-/* Adiciona efeito hover ao botão de pesquisa */
-section button:hover {
-    background-color: #A68C6D; /* Marrom suave */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+section button:hover,
+.atalhos button:hover {
+    background-color: #00cc8f;
 }
 
-/* Estiliza a caixa de resultados da pesquisa */
+/* Resultados */
 .resultados-pesquisa {
-    width: 60rem;
-    height: 46vh;
-    overflow-y: auto;
-    margin-top: 1rem;
+    width: 90%;
+    max-width: 60rem;
+    background-color: #1A1A1A;
+    border-radius: 0.8rem;
     padding: 1rem;
-    border-radius: 0.6rem;
-    background-color: #F5F0E6;
+    margin-top: 1rem;
+    overflow-y: auto;
+    max-height: 50vh;
 }
 
-/* Estiliza cada item de resultado */
+/* Card de resultado */
 .item-resultado {
-    background: #FFFFFF;
-    border-radius: 0.6rem;
+    background-color: #2A2A2A;
+    border-radius: 0.8rem;
     padding: 1rem;
     margin-bottom: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 255, 178, 0.1);
     transition: box-shadow 0.3s ease;
 }
 
 .item-resultado:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 255, 178, 0.2);
 }
 
-/* Estiliza os títulos dentro dos itens de resultado */
+/* Título do card */
 .item-resultado h2 {
     font-size: 1.5rem;
-    color: #A68C6D;
+    color: #00FFB2;
 }
 
-/* Estiliza os links dentro dos itens de resultado */
-.item-resultado a {
-    text-decoration: none;
-    color: #6E5E4F;
-}
-
-.item-resultado a:hover {
-    text-decoration: underline;
-}
-
-/* Estiliza a descrição meta dentro dos itens de resultado */
+/* Descrição */
 .descricao-meta {
-    color: #4B3F33;
+    color: #CCCCCC;
     margin: 0.5rem 0;
 }
 
-/* Estiliza os prompts como tags */
+/* Tags */
 .tags-prompts {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin: 0.5rem 0;
+    margin-top: 0.5rem;
 }
 
 .tag {
-    background-color: #EADAC1;
-    color: #4B3F33;
+    background-color: #00FFB2;
+    color: #0F0F0F;
     padding: 0.4rem 0.8rem;
     border-radius: 1rem;
     font-size: 0.85rem;
-    white-space: nowrap;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-/* Estiliza o rodapé da página */
-footer {
-    background-color: #C4A484;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 0.5rem;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    font-size: 1rem;
+.tag:hover {
+    background-color: #00cc8f;
 }
+
+/* Atalhos */
 .atalhos {
     display: flex;
     flex-wrap: wrap;
@@ -146,72 +131,41 @@ footer {
     margin-bottom: 2rem;
 }
 
-.atalhos button {
-    background-color: #EADAC1;
-    color: #4B3F33;
-    border: none;
-    padding: 0.6rem 1rem;
-    border-radius: 1rem;
+/* Rodapé */
+footer {
+    background-color: #1F1F1F;
+    color: #AAAAAA;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
     font-size: 0.9rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-.atalhos button:hover {
-    background-color: #C4A484;
-    color: #fff;
-}
-
-/* Responsividade para tablets */
+/* Responsividade */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-        letter-spacing: 0.2rem;
-    }
-
     section input {
-        width: 25rem;
-        padding: 0.8rem;
+        width: 22rem;
     }
 
     .resultados-pesquisa {
-        width: 40rem;
-        height: 40vh;
-    }
-
-    .item-resultado h2 {
-        font-size: 1.3rem;
+        max-width: 90%;
     }
 }
 
-/* Responsividade para celulares */
 @media (max-width: 480px) {
     h1 {
-        font-size: 1.8rem;
-        letter-spacing: 0.1rem;
+        font-size: 2rem;
     }
 
     section input {
-        width: 17rem;
+        width: 90%;
     }
 
     section button {
-        padding: 0.6rem 1rem;
         font-size: 0.9rem;
-    }
-
-    .resultados-pesquisa {
-        width: 90%;
-        height: 50vh;
     }
 
     .item-resultado h2 {
-        font-size: 1.1rem;
-    }
-
-    footer {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 }
-
-
