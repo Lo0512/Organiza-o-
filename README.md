@@ -18,3 +18,6 @@ Este projeto foi construído com as três ferramentas básicas da web:
 * **JavaScript:** Para adicionar a mágica da interatividade (adicionar, completar e deletar metas).
 
 
+implementado no google sites : 
+
+<img width="1385" height="621" alt="screenshot-1762433720566" src="https://github.com/user-attachments/assets/08f4f6f1-fa9b-4095-969f-b5c3397c7e2e" />
