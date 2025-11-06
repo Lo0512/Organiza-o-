@@ -1,108 +1,147 @@
-/* Configurações gerais da página */
+/* Importa uma fonte mais elegante do Google Fonts (opcional, mas recomendado) */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Lato:wght@400;700&display=swap');
+
+/* --- VARIÁVEIS DE COR --- */
+:root {
+    --cor-principal: #734332;  /* Marrom escuro (café) */
+    --cor-fundo-claro: #F1E1DD; /* Rosa/bege bem claro */
+    --cor-cinza: #C1C1C1;      /* Cinza médio */
+    --cor-branco-sujo: #F9F9F9; /* Quase branco (para o card) */
+}
+
+/* --- CONFIGURAÇÕES GERAIS --- */
 body {
-    font-family: Arial, sans-serif; /* Fonte limpa, similar ao Google */
-    background-color: #f8f9fa; /* Um cinza muito claro, quase branco */
-    color: #3c4043; /* Cor de texto padrão do Google */
+    /* Usando 'Lato' como fonte principal. Se falhar, usa fontes sans-serif padrão */
+    font-family: 'Lato', 'Gill Sans', 'Calibri', 'Trebuchet MS', sans-serif;
+    background-color: var(--cor-fundo-claro); /* Fundo da página no tom rosa/bege */
+    color: var(--cor-principal); /* Cor de texto padrão será o marrom */
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 40px;
+    padding-top: 50px;
     margin: 0;
 }
 
-/* O card principal que segura o conteúdo */
+/* --- O CARD PRINCIPAL --- */
 .metas-container {
     max-width: 600px;
     width: 100%;
-    background-color: #734332; /* Fundo */
-    padding: 25px 30px;
-    border-radius: 8px;
-    /* Sombra suave para destacar o card */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    background-color: var(--cor-branco-sujo); /* Card com fundo "branco sujo" */
+    padding: 30px 35px;
+    border-radius: 10px; /* Bordas um pouco mais suaves */
+    /* Sombra suave usando a cor principal para dar profundidade */
+    box-shadow: 0 4px 15px rgba(115, 67, 50, 0.1); 
 }
 
+/* --- TÍTULO --- */
 h2 {
+    /* Usando 'Playfair Display' para um título serifado elegante */
+    font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
     text-align: center;
-    color: #202124; /* Cor de título */
+    color: var(--cor-principal);
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    font-weight: 500; /* Um peso de fonte mais refinado */
 }
 
-/* Alinhamento do campo de input e do botão */
+/* --- ÁREA DE INPUT --- */
 .input-area {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
-/* Campo de texto para nova meta */
 #nova-meta-input {
-    flex-grow: 1; /* Faz o input ocupar o máximo de espaço */
-    padding: 10px;
+    flex-grow: 1;
+    padding: 12px 15px;
     font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    font-family: inherit; /* Herda a fonte 'Lato' do body */
+    border: 1px solid var(--cor-cinza); /* Borda cinza */
+    border-radius: 6px;
     margin-right: 10px;
+    color: #333; /* Cor do texto digitado */
+    /* Transições suaves para foco */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Botão principal "Adicionar" */
+#nova-meta-input::placeholder {
+    color: var(--cor-cinza); /* Cor do placeholder */
+}
+
+/* Efeito de foco no input */
+#nova-meta-input:focus {
+    border-color: var(--cor-principal); /* Borda fica marrom */
+    /* Sombra sutil na cor marrom */
+    box-shadow: 0 0 8px rgba(115, 67, 50, 0.2); 
+    outline: none; /* Remove a borda azul padrão do navegador */
+}
+
+/* --- BOTÃO PRINCIPAL "ADICIONAR" --- */
 #adicionar-meta-btn {
-    padding: 10px 15px;
+    padding: 12px 18px;
     font-size: 16px;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: #1a73e8; /* Azul padrão do Google */
+    font-weight: 700; /* 'Lato' bold */
+    color: var(--cor-branco-sujo);
+    background-color: var(--cor-principal); /* Fundo marrom */
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.2s;
+    /* Transições suaves para o hover */
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 #adicionar-meta-btn:hover {
-    background-color: #1558b0; /* Azul um pouco mais escuro */
+    background-color: #5a3528; /* Marrom um tom mais escuro */
+    transform: scale(1.03); /* Leve "pop" ao passar o mouse */
 }
 
-/* Lista de metas */
+/* --- LISTA DE METAS --- */
 #lista-metas {
-    list-style-type: none; /* Remove as bolinhas da lista */
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-/* Cada item (meta) na lista */
+/* Cada item da lista */
 #lista-metas li {
-    padding: 12px 10px;
-    border-bottom: 1px solid #eee; /* Linha separadora fina */
+    padding: 14px 10px;
+    /* Borda pontilhada para um visual mais delicado */
+    border-bottom: 1px dotted var(--cor-cinza); 
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-/* Texto da meta - permite clicar para concluir */
-#lista-metas li span {
-    flex-grow: 1;
-    cursor: pointer;
     font-size: 17px;
 }
 
-/* Estilo da meta quando concluída (riscada) */
-#lista-metas li.concluida span {
-    text-decoration: line-through;
-    color: #888;
+/* Texto da meta */
+#lista-metas li span {
+    flex-grow: 1;
+    cursor: pointer;
+    padding-right: 10px;
+    transition: color 0.3s ease;
 }
 
-/* Botão de deletar (o "X") */
+/* Estilo da meta concluída */
+#lista-metas li.concluida span {
+    text-decoration: line-through;
+    color: var(--cor-cinza); /* Texto concluído fica cinza */
+    font-style: italic;
+}
+
+/* --- BOTÃO DE DELETAR (O "X") --- */
 .delete-btn {
     background-color: transparent;
     border: none;
-    color: #c53929; /* Um tom de vermelho */
+    color: var(--cor-principal); /* "X" na cor marrom */
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700; /* Deixa o "X" mais forte */
     cursor: pointer;
-    padding: 5px;
-    border-radius: 50%;
+    padding: 5px 8px;
+    border-radius: 50%; /* Mantém redondo */
+    transition: all 0.2s ease-in-out;
 }
 
 .delete-btn:hover {
-    color: #a52714;
-    background-color: #fce8e6; /* Fundo vermelho bem claro no hover */
+    color: #a15d46; /* Um marrom mais claro e "avermelhado" */
+    background-color: var(--cor-fundo-claro); /* Fundo rosa/bege ao passar o mouse */
+    transform: scale(1.1);
 }
