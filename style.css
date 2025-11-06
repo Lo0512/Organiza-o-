@@ -1,1 +1,108 @@
+/* Configurações gerais da página */
+body {
+    font-family: Arial, sans-serif; /* Fonte limpa, similar ao Google */
+    background-color: #f8f9fa; /* Um cinza muito claro, quase branco */
+    color: #3c4043; /* Cor de texto padrão do Google */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 40px;
+    margin: 0;
+}
 
+/* O card principal que segura o conteúdo */
+.metas-container {
+    max-width: 600px;
+    width: 100%;
+    background-color: #ffffff; /* Fundo branco do card */
+    padding: 25px 30px;
+    border-radius: 8px;
+    /* Sombra suave para destacar o card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+h2 {
+    text-align: center;
+    color: #202124; /* Cor de título */
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Alinhamento do campo de input e do botão */
+.input-area {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* Campo de texto para nova meta */
+#nova-meta-input {
+    flex-grow: 1; /* Faz o input ocupar o máximo de espaço */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/* Botão principal "Adicionar" */
+#adicionar-meta-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #1a73e8; /* Azul padrão do Google */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#adicionar-meta-btn:hover {
+    background-color: #1558b0; /* Azul um pouco mais escuro */
+}
+
+/* Lista de metas */
+#lista-metas {
+    list-style-type: none; /* Remove as bolinhas da lista */
+    padding: 0;
+    margin: 0;
+}
+
+/* Cada item (meta) na lista */
+#lista-metas li {
+    padding: 12px 10px;
+    border-bottom: 1px solid #eee; /* Linha separadora fina */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Texto da meta - permite clicar para concluir */
+#lista-metas li span {
+    flex-grow: 1;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+/* Estilo da meta quando concluída (riscada) */
+#lista-metas li.concluida span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Botão de deletar (o "X") */
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    color: #c53929; /* Um tom de vermelho */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.delete-btn:hover {
+    color: #a52714;
+    background-color: #fce8e6; /* Fundo vermelho bem claro no hover */
+}
